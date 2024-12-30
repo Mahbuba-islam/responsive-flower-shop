@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+/* header style */
 header{
     display: flex;
     justify-content: center;
@@ -25,15 +25,20 @@ header{
     width: 80%;
     margin: 20px 0px;
 }
+
+/* banner style */
 .picture{
     width: 30%;
-    /* margin: 0px auto; */
+    margin-top:40px;
 }
+
 .picture>img{
   width: 100%;
-  height: 50%;
-  
+ 
 }
+  
+
+/* primary-button */
 .primary-button{
     background-color: #f44a6f;
     width: 100px;
@@ -42,4 +47,96 @@ header{
     border: none;
     border-radius: 5px;
 }
+
+/* featured flowers section */
+
+.flowers{
+    display: grid;
+   grid-template-columns: repeat(3,1fr) ;
+  
+}
+
+
+.flowers-containers{
+   margin: 20px auto;
+   text-align: center;
+  width: 70%;
+   
+}
+
+
+.section-des{
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.section-des>p{
+    margin: 15px 0px;
+   
+}
+
+.flower{
+    width: 270px;
+    height: 360px;
+    background-color: #f44a6f;
+    padding: 0px 20px;
+    border-top-left-radius: 100% 80%;
+    border-top-right-radius: 100% 80%;
+   
+    
+}
+
+.flower>h6{
+    font-size: 2vh;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.flower>img{
+    width:80%;
+    height: 310px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+/* delivery section */
+
+.delivery-container{
+   background-color: #dff7cc;
+   margin: 70px 0px;
+   height: 300px;
+   
+}
+
+.delivery{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3,1fr) ;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+   
+}
+
+.delivery-icon{
+margin: auto;
+ 
+}
+.delivery-icon>img{
+  width: 88px;
+  
+}
+
+.delivery-icon>h6{
+   
+    font-size: 2vh;
+    margin-top: 10px;
+}
+
+
+
 
