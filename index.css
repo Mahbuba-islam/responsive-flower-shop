@@ -23,6 +23,7 @@
 /* header style */
 header{
     background-color: #f7aabbe7;
+  
 }
 .banner{
     display: flex;
@@ -98,7 +99,7 @@ main{
 .flower{
     width: 270px;
     height: 360px;
-    background-color: #f44a6f;
+   
     padding: 0px 20px;
     border-top-left-radius: 100% 80%;
     border-top-right-radius: 100% 80%;
@@ -189,6 +190,11 @@ span{
  background-color: #444343;
 }
 
+#news-letter{
+    margin-bottom: 100px;
+    
+   }
+
 #news-letter>.container{
     background-image: url('./Flower\ Asset/Rectangle 9.png');
     background-size: cover;
@@ -239,3 +245,145 @@ footer>.section-des>p{
     color: #edd6d6;
 }
 
+
+/* media query responsive style */
+
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ }
+ 
+ .container{
+    width: 90%;
+   
+  }
+  
+  .banner-des>h1{
+    width: 70%;
+    margin-top: 30px;
+  }
+  
+  .banner-des>p{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+
+  .banner-img>img{
+    width: 100%;
+  }
+
+  .img-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 70px 20px;
+  }
+
+ 
+
+  .flower{
+    height: 336px;
+    margin: 0px auto;
+  }
+
+  .flower>img{
+    height: 85%;
+  }
+
+  .section-des{
+    width: 70%;
+  }
+
+  .icon-container>.img-container{
+    gap: 20px;
+   
+   }
+   .icon-container{
+    height: 400px;
+   
+   }
+   .icon-container>.img-container>.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 270px;
+    
+   }
+
+   .instagram{
+    
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 860px) { 
+    
+        .banner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+     }
+     
+      .container{
+        width: 80%;
+      }
+
+      
+  .banner-des>h1{
+    width: 50%;
+    margin-top: 30px;
+  }
+    
+      .banner-des>p{
+        width: 100%;
+        margin-top: 20px;
+      }
+    
+      .banner-img>img{
+        width: 100%;
+      }
+    
+
+      .img-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 70px 20px;
+      }
+    
+      .section-des{
+        width: 60%;
+      }
+     
+    
+      .flower{
+        height: 336px;
+        margin: 0px auto;
+      }
+    
+      .flower>img{
+        height: 85%;
+      }
+    
+     
+    
+      .icon-container>.img-container{
+       grid-template-columns: repeat(3,1fr);
+       
+       }
+      
+      
+       #newsletter{
+        margin-bottom: 100px;
+       }
+    
+       .instagram{
+    
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+       
+    }
+
+        }
